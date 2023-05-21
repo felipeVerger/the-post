@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/19117650a0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../style/global.css">
+    <link rel="stylesheet" href="../style/reservas.css">
+    <title>The Post - Reserva</title>
+</head>
+<body>
+    <header>
+        <div class="searchbar flex-center">
+            <i class="fa-solid fa-magnifying-glass search_icon" ></i>
+            <input type="text" name="search" class="search_input" placeholder="Buscar">
+        </div>
+        <div class="navbar flex-column-center">
+            <div class="logo flex-column-center">
+                <h1>
+                    <a href="./index.html">the <br/> post</a>
+                </h1>
+                <span>london bar</span>
+            </div>
+            <nav class="flex-column-center">
+                <ul class="nav-list flex-center">
+                    <li><a class="nav-items" href="./index.html">inicio</a></li>
+                    <li><a class="nav-items" href="./catalogo.html">catalogo</a></li>
+                    <li><a class="nav-items" href="./nosotros.html">nosotros</a></li>
+                    <li><a class="nav-items active" href="./reservas.html">reserva</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Conoce nuestro bar escondido</h2>
+            <section class="days-and-shedules_section">
+                <div class="title_wrapper">
+                    <h4>Dias y Horarios</h4>
+                    <span>Elegir dia y horario</span>
+                </div>
+                <div class="shedule-cards_wrapper">
+                    <div class="card flex-column-center">
+                        <h6>Lunes</h6>
+                        <strong class="cerrado">Cerrado</strong>
+                    </div>
+                    <div class="card flex-column-center">
+                        <h6>Martes</h6>
+                        <strong class="cerrado">Cerrado</strong>
+                    </div>
+                    <div class="card flex-column-center">
+                        <h6>Miercoles</h6>
+                        <strong class="abierto">Abierto</strong>
+                    </div>
+                    <div class="card flex-column-center">
+                        <h6>Jueves</h6>
+                        <strong class="abierto">Abierto</strong>
+                    </div>
+                    <div class="card flex-column-center">
+                        <h6>Viernes</h6>
+                        <strong class="abierto">Abierto</strong>
+                    </div>
+                    <div class="card flex-column-center">
+                        <h6>Sabado</h6>
+                        <strong class="abierto">Abierto</strong>
+                    </div>
+                    <div class="card flex-column-center">
+                        <h6>Domingo</h6>
+                        <strong class="abierto">Abierto</strong>
+                    </div>
+                </div>
+            </section>
+            <form action="">
+                <div class="form_block">
+                    <label for="name">
+                        Nombre y Apellido:
+                        <input type="text" name="name" id="name">
+                    </label>
+                    <label for="email">
+                        E-mail:
+                        <input type="email" name="email" id="email">
+                    </label>
+                </div>
+                <div class="form_block">
+                    <label for="telefono">
+                        Telefono:
+                        <input type="number" name="telefono" id="telefono">
+                    </label>
+                    <label for="diaYHorario">
+                        Dia y Horario:
+                        <input type="datetime" name="diaYHorario" id="diaYHorario">
+                    </label>
+                </div>
+                <div class="form_block">
+                    <label for="comments">
+                        Comentarios:
+                        <textarea name="comments" id="comments"></textarea>
+                    </label>
+                    <button class="submit_button">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="footer_content flex-column-center">
+            <ul class="footer_list flex-center">
+                <li class="footer_list_items"><a href="">inicio</a></li>
+                <li class="footer_list_items"><a href="">catalogo</a></li>
+                <li class="footer_list_items"><a href="">nosotros</a></li>
+                <li class="footer_list_items"><a href="">reserva</a></li>
+            </ul>
+            <small>Ⓒ 2023. The Post Speakeasy. Reservados todos los derechos</small>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,133 @@
+/* EN EL ROOT(RAIZ) SE PUEDE DEFINIR VARIABLES PARA PODER REUTILIZARLAS USANDO var(nombreVariable) */
+:root {
+    /* PALETA DE COLORES */
+    --brownish: #A05B12;
+    --beige: #E8C39E;
+    --dark-red: #961304;
+    --dark-green: #27532F;
+}
+
+/* IMPORTO LAS TIPOGRAFIAS DE GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Libre+Bodoni:wght@400;500&family=Tinos&display=swap');
+/* font-family: 'Josefin Sans', sans-serif;
+font-family: 'Libre Bodoni', serif;
+font-family: 'Tinos', serif; */
+
+/* ESTE ESTILO SE VA A APLICAR A LA PAGINA ENTERA */
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Esto es para estilar el scrollbar del catalogo */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* ESTILOS REUTILIZABLES */
+
+/* Esta clase centra elementos de manera horizontal */
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Esta clase centra elementos de manera vertical */
+.flex-column-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Los estilos que siguen son para los elementos del header los cuales comparten casi los mismos estilos */
+.searchbar {
+    position: absolute;
+    gap: 1rem;
+    color: white;
+}
+
+.search_input {
+    width: 200px;
+    height: 30px;
+    background-color: transparent;
+    border: 1px solid rgb(196, 196, 196);
+    outline: none;
+    border-radius: 10px;
+    text-indent: 10px;
+    color: white;
+}
+
+.search_input:focus {
+    outline: 1px solid white;
+}
+
+.navbar {
+    width: 100%;
+}
+
+.logo {
+    color: white;
+}
+
+.logo a {
+    font-family: 'Libre Bodoni', serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+}
+
+.logo span {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+nav {
+    margin-top: 20px;
+    width: max-content;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 4px;
+}
+
+nav .nav-list {
+    width: 100%;
+    padding: 1rem;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav-items {
+    font-family: 'Josefin Sans', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(116, 116, 116);
+}
+
+.active {
+    color: white;
+}
+
+.nav-items:hover {
+    color: white;
+}
+
