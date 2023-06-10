@@ -120,3 +120,12 @@ footer h6 {
     color: white;
 }
 
+@media (max-width: 768px) {
+    .discover_section {
+        padding: 2rem;
+    }
+    .dicover_offers {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
