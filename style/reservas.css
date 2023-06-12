@@ -169,3 +169,21 @@ footer {
     text-decoration: none;
     color: white;
 }
+
+@media (max-width: 768px) {
+    .shedule-cards_wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .title_wrapper {
+        margin-top: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+    form {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+}
